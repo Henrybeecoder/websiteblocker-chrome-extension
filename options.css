@@ -51,12 +51,12 @@
 }
 
 
-#add:disabled {
+#addButton:disabled {
     background: rgb(238, 238, 238);
     cursor: not-allowed;
     color: grey;
 }
-#add.active {
+#addButton.active {
     background-color: #05c9d9;
 }
 

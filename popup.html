@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <title>Custom Website Blocker</title>
@@ -17,7 +17,92 @@
   <input type="text" id="website" placeholder="Enter website to block">
   <button id="openHenryPage">Open Henry Page</button>
   <button id="add">Add</button>
+
   <ul id="blocked-sites"></ul>
   <script src="popup.js"></script>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Website Blocker</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+        width: 250px;
+      }
+
+      .parent {
+        padding: 10px 20px;
+        width: 100%;
+      }
+      #addSite,
+      #open-option {
+        width: 100%;
+        letter-spacing: 2px;
+        border-radius: 1rem;
+        font-weight: bold;
+        padding: 1rem;
+        border: none;
+
+        margin: 10px 0;
+        transition: 0.3s all ease;
+        color: white;
+      }
+
+      #open-option {
+        background-color: #05c9d9;
+      }
+      #addSite {
+        background: rgb(46, 176, 113);
+      }
+      .child-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="header">
+        <img
+          src="/icons/icon16.png"
+          alt="icon"
+          style="width: 20px; height: 20px"
+        />
+        <h4>JinxBlock</h4>
+      </div>
+      <div class="child-container">
+        <div class="favicon-container">
+          <img id="favicon" src="" alt="Favicon" />
+        </div>
+        <div>
+          <p id="url"></p>
+        </div>
+      </div>
+      <button id="addSite">Block this site</button>
+      <button id="open-option">Go to Options</button>
+    </div>
+    <!-- <div class="input-section">
+      <div class="favicon-container">
+        <img id="favicon" src="" alt="Favicon">
+    </div>
+    <div>
+      <p id="url"></p>
+  </div>
+        <input type="text" id="website" placeholder="Enter website to block (Ex: example.com)">
+        <button id="addButton">Add</button>
+        <button id="addSite">Add site</button>
+    </div>
+    <ul id="blocked-sites"></ul>
+    <div id="no-sites-message" class="empty-blocked-container" style="display: none;">
+        <h4>No Blocked sites yet</h4>
+        <p>When you add sites to block, you will see it here.</p>
+    </div> -->
+    <script src="popup.js"></script>
+  </body>
 </html>

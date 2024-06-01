@@ -24,7 +24,7 @@
         <div class="input-section">
             <input type="text" id="website" placeholder="Enter website to block (Ex: pornhub.com)">
        
-            <button id="add">Add</button>
+            <button id="addButton">Add</button>
         </div>
        <div class="blocked-site-section">
         <h2>Blocked website</h2>
@@ -34,12 +34,18 @@
         </div> -->
        </div>
 
-       <div id="display-text">
+       <!-- <div id="display-text">
         <div class="empty-blocked-container">
             <h4>No Blocked sites yet</h4>
             <p>When you add sites to block, you will see them here</p>
         </div>
-    </div>
+    </div> -->
+
+<ul id="blocked-sites"></ul>
+<div id="no-sites-message" class="empty-blocked-container" style="display: none;">
+<h4>No Blocked sites yet</h4>
+<p>When you add sites to block, you will see it here.</p>
+</div> 
         <ul id="blocked-sites"></ul>
         
     </div>
